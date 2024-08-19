@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'artist_manager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'Artist_manager',
+        'USER': 'Joelfagnon',
+        'PASSWORD': 'Achille@123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
+
 
 
 # Password validation
